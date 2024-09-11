@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Markup de Juros - Doppus</title>
+</head>
+<body>
+    <main id="container">
+        <div id="calculator">
+            <img id="logodoppus" src="logodoppus.svg" alt="Logo Doppus">
+            <h2>Calculadora de Juros e Markup</h2>
+            <!--Inputs-->
+            <div id="input-box">
+                <div class="input-field">
+                    <label for="value">Valor do produto: </label>                   
+                    <input type="number" id="value" placeholder="Digite o valor do produto" required>
+                </div> 
+                <div class="input-field">
+                    <label for="fee">Markup de Juros (%): </label>                   
+                    <input type="number" id="fee" placeholder="Digite o markup de juros" max="2" required>
+                </div>
+                <div class="input-field">
+                    <label for="parcelas">Número de parcelas: </label>
+                    <select name="cars" id="parcelas" required>
+                        <option value="1">1x</option>
+                        <option value="2">2x</option>
+                        <option value="3">3x</option>
+                        <option value="4">4x</option>
+                        <option value="5">5x</option>
+                        <option value="6">6x</option>
+                        <option value="7">7x</option>
+                        <option value="8">8x</option>
+                        <option value="9">9x</option>
+                        <option value="10">10x</option>
+                        <option value="11">11x</option>
+                        <option value="12">12x</option>
+                    </select>
+                </div>
+            </div>
+            <div id="result">
+                <h4>Valor Final Recebido: </h4>
+                <p><span id="valorRecebido">R$ 0,00</span></p>
+            </div>
+            <button id="calculate">
+                Calcular
+            </button>  
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
